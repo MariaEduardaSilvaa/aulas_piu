@@ -13,7 +13,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ## Orientações para incializar:
-npm create vite@latest (criar novo projeto)
-cd aula1 (cria nome da pasta)
-npm install (Instala o pacote)
-npm run dev (Colocar o arquivo no ar)
+| **npm create vite@latest **  | criar novo projeto  |  
+| **cd aula1 **     | cria nome da pasta             |  
+| **npm install**  | Instala o pacote  |  
+| **npm run dev**  | Coloca o arquivo no ar  |  
