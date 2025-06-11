@@ -1,1 +1,49 @@
+import './App.css'
+import Tarefa from './components/Tarefa'
+import Diario from './components/Diario'
 
+
+function App() {
+
+  const tarefas = [
+  {
+    titulo: "Atividade",
+    descricao: "Fazer as atividades da escola.",
+    concluida: false
+  },
+  {
+    titulo: "Estudar JavaScript",
+    descricao: "Ler sobre objetos, arrays e funções.",
+    concluida: true
+  },
+  {
+    titulo: "Fazer exercícios",
+    descricao: "Ir a academia. ",
+    concluida: false
+  },
+  {
+    titulo: "Organizar documentos",
+    descricao: "Separar papéis importantes e jogar fora os desnecessários.",
+    concluida: true
+  },
+  {
+    titulo: "Responder e-mails",
+    descricao: "Checar a caixa de entrada e responder mensagens pendentes.",
+    concluida: false
+  }
+];
+
+
+
+  return (
+    <>
+      <Diario>
+        {tarefas.map(tarefa=> (
+          <Tarefa nome = {tarefa.titulo} desc = {tarefa.descricao} concluida = {tarefa.concluida}></Tarefa>
+        ))}
+      </Diario>      
+    </>
+  )
+}
+
+export default App
